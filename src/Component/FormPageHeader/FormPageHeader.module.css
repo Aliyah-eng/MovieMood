@@ -1,0 +1,51 @@
+.container{
+/* position: fixed; */
+    background-color:adb3a6;
+    height: 5rem;
+}
+.form_header{
+    position: static;
+    display: flex;
+    justify-content: space-between !important;
+    /* paddingrem; */
+    
+}
+.sitename{
+     padding: 0rem 2rem;
+      color: aliceblue;
+      text-decoration: none;
+}
+.button{
+   margin: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.button,.Signup_nav_link{
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f1ecec;
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.button .Signup_nav_link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff4747;
+  transition: width 0.3s ease;
+}
+
+.button a:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Keep underline on active link */
+.button a.active::after {
+  width: 100%;
+}
